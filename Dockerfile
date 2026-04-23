@@ -17,6 +17,6 @@ COPY . /app
 RUN pip install --no-cache-dir --upgrade pip setuptools wheel build \
     && pip install --no-cache-dir .
 
-# Default command can be overridden in Coolify.
-# This keeps the container alive for worker-style usage.
-CMD ["bash", "-lc", "sleep infinity"]
+# Default command (can be overridden in Coolify):
+# run multi-store ingestion using stores.json mounted or copied into /app.
+CMD ["python", "scripts/tasiny_multi_store_ingest.py", "--stores-file", "stores.json"]

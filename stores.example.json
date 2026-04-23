@@ -1,0 +1,36 @@
+{
+  "stores": [
+    {
+      "storeId": "STORE_ID_IRVINE",
+      "name": "Taco Bell Irvine",
+      "sources": [
+        {
+          "url": "https://example-city-events-irvine.com/calendar",
+          "source_name": "irvine_city_calendar",
+          "source_type": "scrape"
+        },
+        {
+          "url": "https://example-venue-irvine.com/events",
+          "source_name": "irvine_major_venue",
+          "source_type": "scrape"
+        }
+      ]
+    },
+    {
+      "storeId": "STORE_ID_GLASGOW",
+      "name": "Taco Bell Glasgow",
+      "sources": [
+        {
+          "url": "https://example-city-events-glasgow.com/calendar",
+          "source_name": "glasgow_city_calendar",
+          "source_type": "scrape"
+        },
+        {
+          "url": "https://example-venue-glasgow.com/events",
+          "source_name": "glasgow_major_venue",
+          "source_type": "scrape"
+        }
+      ]
+    }
+  ]
+}
